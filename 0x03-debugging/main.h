@@ -3,34 +3,9 @@
 
 #include <stdio.h>
 
-void positive_or_negative(int i)
-{	
-	if (i > 0)
-		return (1);
-	
-	return (0);
-}
-
-int largest_number(int a, int b, int c)
-{
-    int largest;
-
-    if (a > b && b > c)
-    {
-        largest = a;
-    }
-    else if (b > a && a > c)
-    {
-        largest = b;
-    }
-    else if (c > a && c > b)
-    {
-        largest = c;
-    }
-
-
-    return (largest);
-}
-
+void positive_or_negative(int i);
+int largest_number(int a, int b, int c);
+int convert_day(int month, int day);
+void print_remaining_days(int month, int day, int year);
 
 #endif /* MAIN_H */
